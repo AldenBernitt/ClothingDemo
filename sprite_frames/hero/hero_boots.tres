@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bbbiqups4ekwp"]
+
+[ext_resource type="Texture2D" uid="uid://cna8ra2cccl3x" path="res://assets/hero/hero_boots.png" id="1_hu3qp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vsjvk"]
+atlas = ExtResource("1_hu3qp")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_huts5"]
+atlas = ExtResource("1_hu3qp")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28br1"]
+atlas = ExtResource("1_hu3qp")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vsjvk")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huts5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28br1")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

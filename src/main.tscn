@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bduvldri65r5n"]
+
+[ext_resource type="PackedScene" uid="uid://g8dk3hpyi7rb" path="res://src/character/character.tscn" id="1_df6g3"]
+[ext_resource type="PackedScene" uid="uid://da58ehdpncjuh" path="res://appearance_menu.tscn" id="1_uiars"]
+
+[node name="Main" type="Node"]
+
+[node name="Character" parent="." instance=ExtResource("1_df6g3")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AppearanceMenu" parent="CanvasLayer" node_paths=PackedStringArray("character") instance=ExtResource("1_uiars")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.5
+offset_top = 20.0
+offset_right = 152.5
+offset_bottom = 51.0
+grow_horizontal = 2
+character = NodePath("../../Character")

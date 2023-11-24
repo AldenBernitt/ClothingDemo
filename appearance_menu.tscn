@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://da58ehdpncjuh"]
+
+[ext_resource type="Script" path="res://appearance_menu.gd" id="1_jrvl1"]
+
+[node name="AppearanceMenu" type="MenuBar"]
+offset_right = 305.0
+offset_bottom = 31.0
+script = ExtResource("1_jrvl1")
+
+[node name="Hair" type="PopupMenu" parent="."]
+hide_on_state_item_selection = true
+allow_search = false
+
+[node name="Head" type="PopupMenu" parent="."]
+hide_on_state_item_selection = true
+allow_search = false
+
+[node name="Torso" type="PopupMenu" parent="."]
+hide_on_state_item_selection = true
+allow_search = false
+
+[node name="Hands" type="PopupMenu" parent="."]
+hide_on_state_item_selection = true
+allow_search = false
+
+[node name="Legs" type="PopupMenu" parent="."]
+hide_on_state_item_selection = true
+allow_search = false
+
+[node name="Feet" type="PopupMenu" parent="."]
+hide_on_state_item_selection = true
+allow_search = false

@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://c8gx1qow5a7hf"]
+
+[ext_resource type="Texture2D" uid="uid://databo15i4plu" path="res://assets/hair/hair_blonde_short.png" id="1_li4ie"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n6jy"]
+atlas = ExtResource("1_li4ie")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jdav"]
+atlas = ExtResource("1_li4ie")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsglv"]
+atlas = ExtResource("1_li4ie")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n6jy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jdav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsglv")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

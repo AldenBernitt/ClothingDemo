@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://c8xlxsmyavu1k"]
+
+[ext_resource type="Texture2D" uid="uid://cvdvfl5uru3ny" path="res://assets/hair/hair_brown_short.png" id="1_qysct"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2f03l"]
+atlas = ExtResource("1_qysct")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4s1tu"]
+atlas = ExtResource("1_qysct")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y0em"]
+atlas = ExtResource("1_qysct")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2f03l")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4s1tu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y0em")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

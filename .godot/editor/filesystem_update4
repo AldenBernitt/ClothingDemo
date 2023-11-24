@@ -1,0 +1,15 @@
+res://src/main.tscn
+res://sprite_frames/hair/hair_blonde_short.tres
+res://sprite_frames/hero/hero_hat.tres
+res://sprite_frames/hero/hero_shirt.tres
+res://sprite_frames/hero/hero_gloves.tres
+res://sprite_frames/hero/hero_pants.tres
+res://sprite_frames/hero/hero_boots.tres
+res://sprite_frames/plumber/plumber_hair.tres
+res://sprite_frames/plumber/plumber_hat.tres
+res://sprite_frames/plumber/plumber_shirt.tres
+res://sprite_frames/plumber/plumber_gloves.tres
+res://sprite_frames/plumber/plumber_pants.tres
+res://sprite_frames/plumber/plumber_shoes.tres
+res://sprite_frames/body.tres
+res://src/character/character.tscn

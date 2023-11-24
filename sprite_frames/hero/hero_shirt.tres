@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://dg0ssdbcqlb5i"]
+
+[ext_resource type="Texture2D" uid="uid://duxt3k42dkfjr" path="res://assets/hero/hero_shirt.png" id="1_nwm0l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qs86d"]
+atlas = ExtResource("1_nwm0l")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_istc6"]
+atlas = ExtResource("1_nwm0l")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jl4ct"]
+atlas = ExtResource("1_nwm0l")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qs86d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_istc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jl4ct")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

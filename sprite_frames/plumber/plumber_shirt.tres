@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://cjtyfo3sr20bo"]
+
+[ext_resource type="Texture2D" uid="uid://kc3008a31m08" path="res://assets/plumber/plumber_shirt.png" id="1_yjg61"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o263c"]
+atlas = ExtResource("1_yjg61")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gi7df"]
+atlas = ExtResource("1_yjg61")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilxy3"]
+atlas = ExtResource("1_yjg61")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o263c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gi7df")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilxy3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

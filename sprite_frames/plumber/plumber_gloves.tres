@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://ckgv8dtcbd6v0"]
+
+[ext_resource type="Texture2D" uid="uid://d0tee4ui30unn" path="res://assets/plumber/plumber_gloves.png" id="1_1wgsa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olu6i"]
+atlas = ExtResource("1_1wgsa")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1r7ww"]
+atlas = ExtResource("1_1wgsa")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gcgb"]
+atlas = ExtResource("1_1wgsa")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olu6i")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1r7ww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gcgb")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

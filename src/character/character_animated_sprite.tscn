@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv5p7cto4aa54"]
+
+[ext_resource type="SpriteFrames" uid="uid://bpuw3hs2pa353" path="res://sprite_frames/empty.tres" id="1_7he47"]
+[ext_resource type="SpriteFrames" uid="uid://nhprkku86sem" path="res://sprite_frames/body.tres" id="1_80dh2"]
+[ext_resource type="Script" path="res://src/character/character_animated_sprite.gd" id="2_i3jq4"]
+
+[node name="CharacterAnimatedSprite" type="Node2D"]
+script = ExtResource("2_i3jq4")
+
+[node name="Base" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_80dh2")
+animation = &"idle"
+
+[node name="Hair" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"
+
+[node name="Head" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"
+
+[node name="Torso" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"
+
+[node name="Hands" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"
+
+[node name="Legs" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"
+
+[node name="Feet" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_7he47")
+animation = &"idle"

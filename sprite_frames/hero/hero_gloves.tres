@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://d3ofkxt5dxdtg"]
+
+[ext_resource type="Texture2D" uid="uid://xjwo0i8pwvea" path="res://assets/hero/hero_gloves.png" id="1_nl8ff"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6y0n"]
+atlas = ExtResource("1_nl8ff")
+region = Rect2(0, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dh1bg"]
+atlas = ExtResource("1_nl8ff")
+region = Rect2(88, 0, 88, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8cmh"]
+atlas = ExtResource("1_nl8ff")
+region = Rect2(176, 0, 88, 88)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6y0n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dh1bg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8cmh")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
